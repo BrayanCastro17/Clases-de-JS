@@ -1,0 +1,25 @@
+/* Estilos Generales */
+
+*, *::before,*::after{
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.limpiador{
+    float: none;
+    clear: both;
+}
+
+/* Estilos por página */

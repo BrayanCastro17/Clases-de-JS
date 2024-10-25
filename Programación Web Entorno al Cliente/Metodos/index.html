@@ -48,14 +48,49 @@
         
     </head>
 <body>
-    <h1>Hola Mundo</h1>
-    <h2>Mi Primer JS</h2>
-        <!-- los archivos js se llaman antes del cierre del BODY -->
+    <div class="container">
+        <!-- Botón para cambiar entre modo claro y oscuro -->
+        <button id="darkModeToggle" class="dark-mode-toggle">🌓</button>
+
+        <h1>Demostración de Métodos JavaScript</h1>
+        <div class="input-section">
+            <label for="userInput">Ingrese texto aquí:</label>
+            <input type="text" id="userInput" placeholder="Escriba algo...">
+        </div>
+        <div class="select-section">
+            <label for="methodSelect">Seleccione un método:</label>
+            <select id="methodSelect">
+                <option value="">-- Seleccione un método --</option>
+                <option value="toUpperCase">Convertir a Mayúsculas</option>
+                <option value="toLowerCase">Convertir a Minúsculas</option>
+                <option value="length">Obtener Longitud</option>
+                <option value="concat">Concatenar</option>
+                <option value="indexOf">Buscar Índice</option>
+                <option value="lastIndexOf">Buscar Último Índice</option>
+                <option value="search">Buscar</option>
+                <option value="match">Buscar Coincidencias</option>
+                <option value="substr">Extraer Sección (Substr)</option>
+                <option value="charAt">Obtener Carácter</option>
+                <option value="startsWith">Verificar Inicio</option>
+                <option value="replace">Reemplazar Texto</option>
+                <option value="slice">Extraer Sección (Slice)</option>
+                <option value="split">Dividir Texto</option>
+                <option value="trim">Eliminar Espacios</option>
+            </select>
+        </div>
+        <button id="executeMethod">Ejecutar Método</button>
+        <div class="result-section">
+            <h2>Resultado:</h2>
+            <div id="result"></div>
+        </div>
+        <!-- Nueva sección para el historial -->
+        <div class="history-section">
+            <h2>Historial:</h2>
+            <ul id="history"></ul>
+        </div>
+    </div>
+        <!-- Los archivos JS se llaman antes del cierre del BODY -->
         <script src="js/modernizr-custom.js"></script>
-        <!-- <script src="js/miPrimerJs.js.js"></script> -->
-        <!-- <script src="js/modoEstricto.js.js"></script> -->
-        <!-- <script src="js/operadores.js"></script> -->
-        <!-- <script src="js/estructuraControl.js"></script> -->
-        <script src="js/plantillaDeTexto.js"></script>
+        <script src="js/app.js"></script>
 </body>
 </html>
